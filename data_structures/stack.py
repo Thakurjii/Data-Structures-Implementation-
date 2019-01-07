@@ -23,6 +23,10 @@ class Stack(object):
     # returns the top element of the stack
     def peek(self):
         return self.stack[-1]
+
+    # returns the size of the stack
+    def get_size(self):
+        return len(self.stack)
     
 
 if __name__ == '__main__':
@@ -31,6 +35,7 @@ if __name__ == '__main__':
     stack1.push(1)
     stack1.push(2)
     stack1.push(3)
+    print('Size :', stack1.get_size())
     print('Stack is empty :', stack1.is_empty())
     print(stack1.pop())
     print(stack1.peek())
